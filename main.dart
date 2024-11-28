@@ -83,7 +83,7 @@ class MainApp extends StatelessWidget {
     );
   }
 
-  Widget cardWidget() {
+  nota() {
     return Container(
       decoration: BoxDecoration(
         color: Colors.blue[50],
@@ -94,19 +94,19 @@ class MainApp extends StatelessWidget {
       width: 200,
       child: Column(
         children: [
-          Row(
+          Row (
             children: [
-              Container(
-                height: 15,
-                width: 15,
-                decoration: BoxDecoration(
+              Container (
+                height: 16,
+                width: 18,
+                decoration:const BoxDecoration(
                   color: Colors.blue[300],
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
               const SizedBox(width: 10),
               const Text(
-                'Task Title',
+                'Padridno',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
@@ -117,7 +117,7 @@ class MainApp extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text(
-                  'This is a sample task description. You can edit this task to add more details or update the status.',
+                  'Habian dos motos y las dos se caen y dijeron ijoles te pasaste de motoplas',
                 ),
               ),
             ),
@@ -161,8 +161,7 @@ class MainApp extends StatelessWidget {
           children: [
             Icon(icon, color: Colors.blue),
             const SizedBox(width: 11),
-            Text(
-              text,
+            Text(Hola),
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ],
