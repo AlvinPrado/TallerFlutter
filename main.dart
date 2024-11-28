@@ -42,7 +42,7 @@ class MainApp extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'My Workspace',
+                        'My Chapulineada',
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -65,13 +65,13 @@ class MainApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      cardWidget(),
+                      nota(),
                       const SizedBox(width: 25),
-                      cardWidget(),
+                      nota(),
                       const SizedBox(width: 25),
-                      cardWidget(),
+                      nota(),
                       const SizedBox(width: 25),
-                      cardWidget(),
+                      nota(),
                     ],
                   ),
                 ],
@@ -83,10 +83,10 @@ class MainApp extends StatelessWidget {
     );
   }
 
-  nota() {
+  Widget nota() {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.blue[50],
+        color: Colors.blue[50]!,
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(20),
@@ -94,79 +94,22 @@ class MainApp extends StatelessWidget {
       width: 200,
       child: Column(
         children: [
-          Row (
+          Row(
             children: [
-              Container (
+              Container(
                 height: 16,
                 width: 18,
-                decoration:const BoxDecoration(
-                  color: Colors.blue[300],
+                decoration: BoxDecoration(
+                  color: Colors.blue[300]!,
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
               const SizedBox(width: 10),
               const Text(
-                'Padridno',
+                'Padrino',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
           ),
           const SizedBox(height: 20),
-          const Expanded(
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Text(
-                  'Habian dos motos y las dos se caen y dijeron ijoles te pasaste de motoplas',
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
-          Row(
-            children: [
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[100],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: Text(
-                    'Edit',
-                    style: TextStyle(
-                      color: Colors.blue[700],
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  InkWell customButton(IconData icon, String text, Function onPressed) {
-    return InkWell(
-      onTap: () {
-        onPressed();
-        print(text);
-      },
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        child: Row(
-          children: [
-            Icon(icon, color: Colors.blue),
-            const SizedBox(width: 11),
-            Text(Hola),
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+   
